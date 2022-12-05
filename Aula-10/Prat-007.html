@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+            color: blue;
+        }
+        input {
+            height: 20px;
+            color: blue;
+            border-color: blue;
+            background-color: lightskyblue;
+        }
+        button {
+            width: 100px;
+            height: 30px;
+            color: blue;
+            border-color: blue;
+            background-color: lightskyblue;
+        }
+        #res {
+            margin-top: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="number" id="n0">
+    <input type="number" id="n1">
+    <button id="calculo" onclick="Calcular()">Calcular</button>
+    <div id="res">Digite acima os números que quer calcular</div>
+    <script>
+        var a = document.getElementById('n0')
+        function Calcular() {
+            var v = [document.getElementById('n0'), document.getElementById('n1')]
+            var n = [Number(v[0].value), Number(v[1].value)]
+            var s = n[0] + n[1]
+            res.innerHTML = `O resultado de ${n[0]} com ${n[1]} é igual a: <stong>${s}</strong>.`
+        }
+    </script>
+</body>
+</html>

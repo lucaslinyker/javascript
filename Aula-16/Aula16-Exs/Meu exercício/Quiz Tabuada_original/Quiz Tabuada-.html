@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Tabuada</title>
+    <link rel="stylesheet" href="Quiz Tabuada-.css">
+    <script src="Quiz Tabuada-.js" defer></script>
+</head>
+
+<body onload="mostrar()">
+    <header>
+        <h1>Quiz Tabuada</h1>
+    </header>
+    <section>
+        <input type="button" value="Configurações" id="tela" onclick="tela()">
+        <div id="telaInicial">
+            <h2 id="tab">
+                <div id="numTab"></div>
+                <div id="tabDo"></div>
+                <div id="numX"></div> = <div id="resposta">?</div>
+            </h2>
+            <input type="number" id="res">
+            <button id="enviar" onclick="enviar(document.getElementById('res').value)">Enviar</button>
+        </div>
+        <div id="configurações">
+            <div id="ladoalado" class="NúmeroDaTabuada">
+                Número da tabuada: <input type="number" value="1" id="InTab">
+                ao
+                <input type="number" value="10" id="FnTab">
+                <div class="exemplo"></div>
+            </div>
+            <div id="ladoalado">
+                Número de vezes: <input type="number" value="1" id="iXnTab">
+                ao
+                <input type="number" value="10" id="fXnTab">
+                <div class="exemplo"></div>
+            </div>
+            <div id="ladoalado">
+                <input type="checkbox" id="marca1" name="marca" class="multiplicação" style="position: relative; top: 5px;" checked>
+                <label for="marca1" class="multiplicação" style="margin-right: 10px;">✖</label>
+
+                <input type="checkbox" id="marca2" name="marca" class="subtração" style="position: relative; top: 5px;">
+                <label for="marca2" class="subtração" style="margin-right: 10px;">➖</label>
+
+                <input type="checkbox" id="marca3" name="marca" class="adição" style="position: relative; top: 5px;">
+                <label for="marca3" class="adição" style="margin-right: 10px;">➕</label>
+
+                <input type="checkbox" id="marca4" name="marca" class="divisão" style="position: relative; top: 5px;">
+                <label for="marca4" class="divisão">➗</label>
+                <div class="exemplo" style="margin-left: 10px;"></div>
+            </div>
+            <button id="ex" onclick="ex()">?</button>
+            <button id="ex" onclick="savar()">Salvar</button>
+            <button id="ex" onclick="padrão()">Padrão</button>
+        </div>
+    </section>
+    <footer>
+        <h3>&reg; Lucas Linyker</h3>
+        <h4>&copy; CursoemVídeo</h4>
+    </footer>
+</body>
+
+</html>

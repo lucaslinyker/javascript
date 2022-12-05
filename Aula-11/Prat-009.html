@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+</head>
+<body>
+    <h1>Saiba oque você é</h1>
+    Selecione seu país: <input type="text" id="país">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="verificado"></div>
+    <script>
+        function verificar() {
+            var country = document.getElementById('país')
+            var país = (country.value)
+            document.querySelector('#verificado').innerHTML = `<p>Vivendo em <strong>${país}</strong></p>`
+            if (país != 'Brasil') {
+                verificado.innerHTML += '<p>Você é <strong>Estrangeiro!</strong></p>'
+            } else {
+                verificado.innerHTML += '<p>Você é <strong>Brasileiro!</strong></p>'
+            }
+        }
+    </script>
+</body>
+</html>

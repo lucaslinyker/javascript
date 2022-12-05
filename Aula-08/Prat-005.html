@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+    <style>
+        body { 
+        background-color: white; 
+        color: forestgreen; /* h4 */ 
+        font: normal 20pt Arial; 
+        }
+        h1 { 
+        color: black; 
+        }
+        h2 { 
+        color: darkgreen; 
+        }
+        h3 { 
+        color: green; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Operadores:</h1>
+    <h2>Relacionais:</h2>
+    <script>
+        var n1 = prompt('Digite um número: ')
+        var n2 = prompt('Digite outro número: ')
+        document.write(`n1: <mark>${n1}</mark></br>`)
+        document.write(`n2: <mark>${n2}</mark></br>`)
+        var booleano1 = prompt('Digite uma expressão lógica: ')
+        var booleano2 = prompt('Digite um valor booleano ou uma expressão lógica: ')
+        document.write(`booleano1: <mark>${booleano1}</mark></br>`)
+        document.write(`booleano2: <mark>${booleano2}</mark></br>`)
+        // Pesquisa no mozilla: Outros elementos de transporte semântica de nível de texto
+        document.write(`<em>Maior</em>: ${n1} <u>></u> ${n2} --<small>></small> <strong>${n1 > n2}</strong></br>`)
+        document.write(`<em>Menor</em>: ${n1} <u><</u> ${n2} --<small>></small> <strong>${n1 < n2}</strong></br>`)
+        document.write(`<em>Maior ou igual</em>: ${n1} <u>>=</u> ${n2} --<small>></small> <strong>${n1 >= n2}</strong></br>`)
+        document.write(`<em>Menor ou igual</em>: ${n1} <u><=</u> ${n2} --<small>></small> <strong>${n1 <= n2}</strong></br>`)
+        document.write(`<em>Igual</em>: ${n1} <u>==</u> ${n2} --<small>></small> <strong>${n1 == n2}</strong></br>`)
+        document.write(`<em>Diferente</em>: ${n1} <u>!=</u> ${n2} --<small>></small> <strong>${n1 != n2}</strong></br>`)
+        // em: itálico, u: sublinhado, small: pequeno/baixo, strong: negrito, br: pula pra linha de baixo, mark: grifa
+    </script>
+    <h3>Indentidade:</h3>
+    <script>
+        document.write(`<em>Idêntico</em>: ${n1} <u>===</u> ${n2} --<small>></small> <strong>${n1 === n2}</strong></br>`)
+        document.write(`<em>Desigual restrito</em>: ${n1} <u>!==</u> ${n2} --<small>></small> <strong>${n1 !== n2}</strong></br>`)
+    </script>
+    <h2>Lógicos:</h2>
+    <h3>Negação:</h3>
+    <script>
+        var bolean1 = Boolean(booleano1) // Aqui está o erro!
+        var bolean2 = Boolean(booleano2) // Na conversão!
+        document.write(`bolean1 <mark>${bolean1}</mark></br>`)
+        document.write(`bolean2 <mark>${bolean2}</mark></br>`)
+        document.write(`<em>Não</em>: <u>!</u> ${booleano1} --<small>></small> <strong>${! bolean1}</strong></br>`)
+        document.write(`<em>Não</em>: <u>!</u> ${booleano2} --<small>></small> <strong>${! bolean2}</strong></br>`)
+    </script>
+    <h3>Conjunção:</h3>
+    <script>
+        document.write(`<em>E<em>: ${booleano1} <u>&&<u> ${booleano2} --<small>></small> <strong>${bolean1 && bolean2}</strong></br>`)
+    </script>
+    <h3>Disjunção:</h3>
+    <script>
+        document.write(`<em>Ou<em>: ${booleano1} <u>||<u> ${booleano2} --<small>></small> <strong>${bolean1 || bolean2}</strong></br>`)
+    </script>
+    <h2>Ternário:</h2>
+    <script>
+        document.write(`<em>Interrogação e 2 pontos<em>: ${booleano1} <u>?<u> 'Verdadeiro' <u>:</u> 'Falso' --<small>></small> <strong>${bolean1 ? 'Veradeiro' : 'Falso'}</strong>`)
+    </script>
+</body>
+</html>

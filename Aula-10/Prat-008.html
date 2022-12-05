@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        #quadrado {
+            margin-top: 14px;
+            font: normal 20pt Arial;
+            background-color: lime;
+            color: white;
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="quadrado">Interaja!</div>
+    <script>
+        var css = document.getElementById('quadrado')
+        css.addEventListener('contextmenu', menu)
+        css.addEventListener('dblclick', cliqueduplo)
+        css.addEventListener('mousedown', pressionado)
+        css.addEventListener('mouseenter', entrou)
+        css.addEventListener('mouseout', saiu)
+        css.addEventListener('mouseup', botãolevantado)
+        css.addEventListener('wheel', rolagem)
+        function menu() {
+            css.innerHTML = 'Ativou o menu!'
+            css.style.backgroundColor = 'red'
+        }
+        function cliqueduplo() {
+            css.innerHTML = 'Clicou 2 vezes!'
+            css.style.backgroundColor = 'yellow'
+        }
+        function pressionado() {
+            css.innerHTML = 'Pressionado!'
+            css.style.backgroundColor = 'green'
+        }
+        function entrou() {
+            css.innerHTML = 'Mouse dentro!'
+            css.style.backgroundColor = 'lightblue'
+        }
+        function saiu() {
+            css.innerHTML = 'Saiu!'
+            css.style.backgroundColor = 'gray'
+        }
+        function botãolevantado() {
+            css.innerHTML = 'Botão levantado!'
+            css.style.backgroundColor = 'purple'
+        }
+        function rolagem() {
+            css.innerHTML = 'Rolado!'
+            css.style.backgroundColor = 'brown'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+    background-color: #004eff;
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    /* background-color: #333333; */
+    border-radius: 10px;
+    padding: 15px;
+    width: 27%;
+    height: 497px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+#tab {
+    display: flex;
+}
+
+#resposta {
+    color: yellow;
+    margin-left: 10px;
+}
+
+#tabDo {
+    margin-left: 10px;
+}
+
+#ladoalado {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.NúmeroDaTabuada {
+    margin-top: 10px;
+}
+
+#InTab, #FnTab, #fXnTab, #iXnTab {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 10%;
+}
+
+.ex {
+    width: 25px;
+    height: 22px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário</title>
+    <style>
+        body {
+            background-color: white;
+            font: normal 20pt Arial
+        }
+        h1 {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var name = prompt('Digite seu nome: ')
+        var salário = Number(prompt('Digite seu salário: '))
+        document.write(`Paz Deus <strong>${name}</strong>.</br>`)
+        document.write(`Seu nome tem ${name.lenght} letras.</br>`)
+        document.write(`Seu nome em maiúsculas é assim: <strong>${name.toUpperCase()}</strong>.</br>`)
+        document.write(`Seu nome em mainúsculas fica assim: <strong>${name.toLowerCase()}</strong>.</br>`)
+        salário_ano = salário + salário + salário + salário + salário + salário + salário + salário + salário + salário + salário + salário
+        document.write(`Seu salário por ano: ${String(salário_ano.toLocaleString('pt-BR', {style:'currency', currency:'BRL'}))}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body { background-color: yellow; color: black; font: normal 20pt Arial; }
+        h1 { color: black; }
+    </style>
+</head>
+<body>
+    <script>
+        var name = prompt('digite seu nome: ')
+        document.write(`Paz Deus <strong>${name}</strong>.</br>`)
+        var n = [Number(prompt('Digite um número: '))]
+        var n = Number(prompt('Digite outro número: '))
+        document.write('Calculando:</br>')
+        document.write(`A soma entre ${n[0]} e ${n[1]} é: ${n[0] + n[1]}</br>`)
+        document.write(`${n[0]} menos ${n[1]} é: ${n[0] - n[1]}</br>`)
+        document.write(`${n[0]} vezes ${n[1]} é: ${n[0] * n[1]}</br>`)
+        document.write(`${n[0]} dividido por ${n[1]} é: ${n[0] / n[1]}</br>`)
+        document.write(`${n[0]}% de ${n[1]} é: ${n[0] * n[1] / 100}</br>`)
+        document.write(`A potência de ${n[0]} elevado a ${n[1]} é: ${n[0] ** n[1]}</br>`)
+    </script>
+</body>
+</html>

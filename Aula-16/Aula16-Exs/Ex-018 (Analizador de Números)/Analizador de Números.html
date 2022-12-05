@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador de Números</title>
+    <link rel="stylesheet" href="Analizador de Números.css">
+    <script src="Analizador de Números.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Analizador de Números</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Número (entre 1 e 100): <input type="number" id="v" min="1" max="100">
+                <button id="adicionar" onclick="adicionar()">Adicionar</button>
+            </p>
+        </div>
+        <div>
+            <select id="result" size="14"></select><br>
+            <button id="finalizar" onclick="finish()">Finalizar</button>
+            <div id="res"></div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVídeo</p>
+    </footer>
+</body>
+</html
