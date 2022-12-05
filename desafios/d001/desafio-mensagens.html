@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Mensagens</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            padding: 23px;
+            border: 1px solid gray;
+            border-radius: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio das Mensagens</h1>
+    <button onclick='btn(1)'>Botão 1</button>
+    <button onclick='btn(2)'>Botão 2</button>
+    <button onclick='btn(3)'>Botão 3</button>
+    <script>
+        function btn(n) {
+            document.getElementsByTagName('button')[n-1].style.backgroundColor = 'gray'
+            setTimeout(() => {
+                alert(`Você clicou no ${n}º botão!`);
+                document.getElementsByTagName('button')[n-1].style.color = 'black'
+                document.getElementsByTagName('button')[n-1].style.backgroundColor = 'buttonface'
+            }, 0.001);
+        }
+    </script>
+</body>
+</html>
