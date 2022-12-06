@@ -5,8 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Desafio boas-vindas</title>
+    <style>
+        button {
+            padding: 25px;
+        }
+    </style>
 </head>
 <body>
     <h1>Boas-vindas</h1>
+    <button onclick='welcome()'>Inicie o desafio</button>
+    <script>
+        function welcome() {
+            const name = prompt('Qual é o seu nome?')
+            const age = prompt(`Olá, ${name}! Quantos anos você tem?`)
+            alert(`Acabei de conhecer Gustavo Guanabara, que tem 42 anos de idade!`)
+        }
+    </script>
 </body>
 </html>
