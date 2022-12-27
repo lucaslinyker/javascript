@@ -1,0 +1,38 @@
+main {
+    background-color: black;
+    color: white;
+    width: 140px;
+    border: 3px solid red;
+    border-radius: 2px;
+    margin: auto;
+}
+
+main > section#sect1 {
+    background-color: red;
+    border: 3px solid;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    opacity: 50%;
+}
+
+main > section#sect2 {
+    background-color: yellow;
+    border: 3px solid;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    opacity: 50%;
+}
+
+main > section#sect3 {
+    background-color: green;
+    border: 3px solid;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    opacity: 50%;
+}
