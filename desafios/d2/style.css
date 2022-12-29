@@ -13,4 +13,5 @@ main {
     height: 100px;
     margin: 10px auto;
     opacity: 50%;
+    cursor: pointer;
 }
